@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pure HTML </title>
+</head>
+<body>
+  <a href="work.html"><mark>GO BACK</mark> </a>
+  <header>
+    <h1 >Pure HTML </h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Image</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#extras">Semantic Extras</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+
+  <main>
+    <!-- About Section with Headings & Paragraphs -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>This page is intentionally written using <strong>HTML only</strong> — no CSS, 
+        no JavaScript. It demonstrates headings, paragraphs, links, images, forms, tables, and other semantic tags.</p>
+      <p>Use the navigation above to jump to sections. You can also return to the 
+        <a href="#top">top of the page</a> at any time.</p>
+      <article>
+        <h3>Why Semantic HTML?</h3>
+        <p><em>Semantic</em> elements convey meaning. Tags like <code>&lt;header&gt;</code>, 
+          <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code> help assistive technologies and search engines understand your content.</p>
+        
+          "User agents should expose the structure of a document through the accessibility tree."
+        </blockquote>
+        <p>Published on <time datetime="2025-08-30">August 30, 2025</time>.</p>
+      </article>
+      <aside>
+        <h4>Quick Facts</h4>
+        <ul>
+          <li>This page uses >HTML.</li>
+          <li>No external assets are required.</li>
+          <li>All images are embedded or referenced locally.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <hr>
+
+    <!-- Image / Figure -->
+    <section id="gallery" aria-labelledby="image-heading">
+      <h2 id="image-heading">Image & Figure</h2>
+      <figure>
+        <!-- Inline SVG used so the page has no external dependencies -->
+        <img alt="Simple geometric logo" src="img/logo.png" height="200px" width="200px" />
+        <figcaption>A logo local saved.</figcaption>
+      </figure>
+      <p>Need an external link? Visit the <a href="work.html" target="_blank" rel="noopener">WebWall</a> for references.</p>
+    </section>
+
+    <hr>
+
+    <!-- Table Example -->
+    <section id="table" aria-labelledby="table-heading">
+      <h2 id="table-heading">Table with Caption, Header, and Body</h2>
+      <table border="2px" cellspacing="0" cellpadding="8">
+        <caption>Weekly Schedule</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Task</th>
+            <th scope="col">Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Monday</th>
+            <td>Planning</td>
+            <td>09:00–10:00</td>
+          </tr>
+          <tr>
+            <th scope="row">Wednesday</th>
+            <td>Development</td>
+            <td>10:00–16:00</td>
+          </tr>
+          <tr>
+            <th scope="row">Friday</th>
+            <td>Review</td>
+            <td>14:00–15:00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Times are local; last updated <time datetime="2025-08-30">Aug 30, 2025</time>.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Forms Example -->
+    <section id="forms" aria-labelledby="forms-heading">
+      <h2 id="forms-heading">Forms</h2>
+      <p>The form below uses labels, fieldsets, and a variety of input types. No JavaScript is used.</p>
+
+      <form     action="#" method="POST">
+        <fieldset>
+          <legend>Basic Information</legend>
+          <p>
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required>
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </p>
+          <p>
+            <label for="role">Role:</label>
+            <select id="role" name="role">
+              <option value="dev">Developer</option>
+              <option value="design">Designer</option>
+              <option value="pm">Product Manager</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <p>
+            <label for="topic">Favorite Topic:</label>
+            <input list="topics" id="topic" name="topic" placeholder="Start typing...">
+            <datalist id="topics">
+              <option value="HTML">
+              <option value="CSS">
+              <option value="JavaScript">
+              <option value="Accessibility">
+            </datalist>
+          </p>
+          <p>
+            <label for="url">Website:</label>
+            <input id="url" name="url" type="url" placeholder="https://example.com">
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="subscribe" value="yes"> Subscribe to updates
+            </label>
+          </p>
+          <p>
+            <label>Contact Preference:</label>
+            <label><input type="radio" name="contact" value="email" checked> Email</label>
+            <label><input type="radio" name="contact" value="phone"> Phone</label>
+          </p>
+          <p>
+            <label for="date">Preferred Date:</label>
+            <input id="date" name="date" type="date">
+          </p>
+          <p>
+            <label for="file">Upload a File:</label>
+            <input id="file" name="file" type="file">
+          </p>
+          <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="Type your message..."></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </p>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- Extra semantic elements -->
+    <section id="extras" aria-labelledby="extras-heading">
+      <h2 id="extras-heading">More Semantic Elements</h2>
+      <details>
+        <summary>Show a short glossary</summary>
+        <dl>
+          <dt>Semantic HTML</dt>
+          <dd>Using meaningful tags that describe their purpose and structure.</dd>
+          <dt>Accessibility</dt>
+          <dd>Designing content that can be used by people with a wide range of abilities.</dd>
+        </dl>
+      </details>
+      <p>You can highlight text with <mark>important notes</mark> or provide citations like <cite>W3C HTML Spec</cite>. Use <small>small print</small> for disclaimers and <kbd>Ctrl</kbd> + <kbd>P</kbd> for a print hint.</p>
+      <p>Back to <a href="#top">top</a>.</p>
+    </section>
+  </main>
+
+  <hr>
+
+  <!-- Footer with Contact Info -->
+  <footer id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact</h2>
+    <address>
+      
+      123 Example Street<br>
+      Athens, Greece<br>
+      <a href="mailto:hello@example.com">hello@example.com</a>
+    </address>
+    <p>&copy; <time datetime="2025">2025</time> WebWall.</p>
+  </footer>
+</body>
+</html>

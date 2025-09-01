@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flexbox & Grid Demo</title>
+  <link rel="stylesheet" href="styles/style_1.css">
+</head>
+<body>
+   <section class="back">
+     <a href="work.html"><mark>GO BACK</mark></a>
+    </section>
+  <header>
+    <h1>Responsive Demo Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#forms">Forms</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>This page is styled with <strong>CSS</strong> using Flexbox and CSS Grid for responsiveness. Resize the window to see the layout adapt.</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <figure>
+        <img src="img/logo.png" alt="Placeholder image" height="150px " width="150px " >
+        <figcaption>A sample image with caption.</figcaption>
+      </figure>
+    </section>
+
+    <section id="table">
+      <h2>Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Task</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Planning</td>
+            <td>09:00</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Development</td>
+            <td>10:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="forms">
+      <h2>Forms</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+          <option value="dev">Developer</option>
+          <option value="design">Designer</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Responsive Demo Page by WebWall</p>
+  </footer>
+</body>
+</html>
