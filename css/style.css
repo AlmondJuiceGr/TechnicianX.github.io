@@ -1,24 +1,6 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
 
-/**
-*
-* ---------------------------------------------------------------------------
-*
-* Template : Blue - A One-Page HTML Portfolio/Business Template
-* Author : Muhammad Morshd
-* Author URI : http://morshed.im
-*f
-* --------------------------------------------------------------------------- 
-*
-*/
-/* =================================== */
-/*	Basic Style 
-/* =================================== */
+
+/*	Basic Style */
 body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -34,7 +16,7 @@ address {
 }
 
 iframe {
-  border: 0;
+  border: 1px;
 }
 
 a {
